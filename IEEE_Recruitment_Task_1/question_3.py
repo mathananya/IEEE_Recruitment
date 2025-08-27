@@ -1,6 +1,10 @@
 from numpy import *
 
-matrix = random.randint(1,100,size=(5,5))
+def x5matrix(): #creating a function because needed for question 5?
+    matrix = random.randint(1,100,size=(5,5))
+    return matrix
+
+matrix = x5matrix()
 print('MATRIX:\n',matrix,'\n')
 print('Maximum number = ', amax(matrix))
 print('Minimum number = ', amin(matrix))
