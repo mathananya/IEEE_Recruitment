@@ -26,10 +26,40 @@ for eachData in theActualList:
     except:
         pass
     
-print(l)
+#print(l)
 
 ## NOW THE ACTUAL PROGRAM STARTS. IGNORE ABOVE IF BEHIND ON CLASSWORK.
 
+##Create a marks cutoff list in the form of
+##[ 
+##    (“Pilani”, “CS”, 327 ),
+##    (“Pilani”,”Eco”, 271),
+##    (“Goa”, “Chemical”, 239),
+##    .
+##    .
+##    .
+##]
+##for CS, Chemical, Msc. Eco and Msc. Bio of all three campuses for BITSAT ‘24. 
+##Now, convert the list to a dictionary in form of
+##
+##{
+##    “Pilani” : {“CS” : 327, “Eco” : 275 …..},
+##    “Goa” : {....},
+##    “Hyderabad” : {....}, 
+##}
+
 d = dict()
-for city in l:
-    d[city] = 
+for i in l:
+    if i[0] not in d:
+        d[i[0]] = {i[1]:i[2]}
+    else:
+        d[i[0]][i[1]] = i[2]
+print(d)
+
+
+
+
+
+
+
+
