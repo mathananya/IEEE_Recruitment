@@ -1,4 +1,3 @@
-
 n = int(input('Enter an integer: '))    # taking integer input for number of lines
 
 for i in range(1,n+1):      # for each line from 1 to n to be printed,
